@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pi Sell</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Styles for form centering and element alignment */
+        form {
+            margin: 0 auto;
+            width: 300px;
+            text-align: center;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+         }
+
+        input[type="email"] {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: purple;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            margin-left: 65%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <form action="sell.php" method="post">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="name">USDT (Tether) :</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="message">Your Pi network address:</label><br>
+        <input type="text" id="message" name="message" required><br>
+
+        <input type="submit" value="Sell">
+    </form>
+</body>
+</html>
